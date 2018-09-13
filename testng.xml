@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel ="tests">
+ 
+  <test name="FF tests for node1">
+<parameter name="node1" value="node1FF"/>
+    <classes>
+      <class name="com.qa.testcases.BaseTest"/>
+        </classes>
+  </test> <!-- Test -->
+  
+  <test name=" Chrome tests for node 2">
+<parameter name="node1" value="node2Chrome"></parameter>
+    <classes>
+      <class name="com.qa.testcases.BaseTest"/>
+        </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

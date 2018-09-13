@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="node1" value="node2Chrome"/>
+  <test name="FF tests for node1(failed)" parallel="tests">
+    <parameter name="node1" value="node1FF"/>
+    <classes>
+      <class name="com.qa.testcases.BaseTest">
+        <methods>
+          <include name="setUp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qa.testcases.BaseTest -->
+    </classes>
+  </test> <!-- FF tests for node1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
